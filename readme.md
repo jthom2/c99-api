@@ -14,36 +14,32 @@ Go to the endpoint you want to access.
 
 ### Subdomain Finder and CloudFlare Resolver
 Performs an advanced subdomain scan to find most subdomains of the given domain.
-```
+```python
 Endpoint: /subdomain/{domain}
 ```
 
 ### Phone Lookup
 Get more information about any phone number.
-```
+```python
 Endpoint: /phone/{phone_number}
-
 ```
 
 ### Firewall Technology (WAF) Detector
 Scans to detect if a website is behind a firewall and determines what firewall it is.
 ```
 Endpoint: /firewalldetector/{url}
-
 ```
 
 ### Multiple Port Scanner
 Scans all ports of given host.
 ```
 Endpoint: /multi/portscanner/{host}
-
 ```
 
 ### Single Port Scanner
 Scans a single port of given host.
 ```
 Endpoint: /single/portscanner/{host}/{port}
-
 ```
 
 ### Ping
