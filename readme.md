@@ -4,7 +4,9 @@
 # Setup
 
 Make sure you have python installed
+
 Run the install.bat file then run the run.bat file
+
 Go to the endpoint you want to access.
 
 ## Features
