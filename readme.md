@@ -4,7 +4,9 @@ Make sure you have python installed
 Run the install.bat file then run the run.bat file
 Go to the endpoint you want to access.
 
-Subdomain Finder and CloudFlare Resolver
+## Features
+
+### Subdomain Finder and CloudFlare Resolver
 Performs an advanced subdomain scan to find most subdomains of the given domain.
 	
 Phone Lookup
