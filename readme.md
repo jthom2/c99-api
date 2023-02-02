@@ -1,3 +1,6 @@
+
+![6qi0IOfvib](https://user-images.githubusercontent.com/34923485/216248305-d8bafc1e-8910-4cf1-9e6a-d7697e3db4ff.gif)
+
 # Setup
 
 Make sure you have python installed
