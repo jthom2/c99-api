@@ -9,7 +9,7 @@ Go to the endpoint you want to access.
 ### Subdomain Finder and CloudFlare Resolver
 Performs an advanced subdomain scan to find most subdomains of the given domain.
 	
-Phone Lookup
+### Phone Lookup
 Get more information about any phone number.
 	
 Firewall Technology (WAF) Detector
