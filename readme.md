@@ -1,7 +1,7 @@
 
 ![6qi0IOfvib](https://user-images.githubusercontent.com/34923485/216248305-d8bafc1e-8910-4cf1-9e6a-d7697e3db4ff.gif)
 
-c99-discord coming soon!
+Featured on https://api.c99.nl/integrations
 
 # Setup
 Make sure you have a c99.nl key, you can't use this without one
