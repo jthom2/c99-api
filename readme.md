@@ -98,7 +98,11 @@ response = api.emailvalidator(email='example@example.com', json=True)
 print(response)
 ```
 ```json
-{'success': True, 'exists': False, 'error': "E-mail doesn't exist."}
+{
+    "success": True, 
+    "exists": False,
+    "error": "E-mail doesn't exist."
+}
 ```
 
 
