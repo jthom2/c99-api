@@ -1,11 +1,11 @@
-# handler.py
+# Client for handling responses from API and outputting in desired format
 
 import requests
 from .methods import register_methods
 
 @register_methods
 
-class APIHandler:
+class EndpointClient:
 
     key = None
     base_url = 'https://api.c99.nl'

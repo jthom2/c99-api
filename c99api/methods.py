@@ -1,5 +1,3 @@
-# methods.py
-
 def register_methods(cls):
     method_names = [func.__name__ for func in globals().values() if callable(func) and func.__name__ != 'register_methods']
     for method_name in method_names:

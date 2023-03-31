@@ -1,9 +1,14 @@
 from setuptools import setup, find_packages
 
+# Setting up
 setup(
-    name='c99api',
-    version='0.1.1',
+    name="c99api",
+    version='1.0',
+    license='MIT',
     description='A Python wrapper and handler for the c99.nl API',
+    author="David Peterson",
+    author_email="dapanon@proton.me",
+    url='https://github.com/Haste171/c99-api',
     packages=find_packages(),
     install_requires=['requests'],
     classifiers=[
@@ -20,4 +25,3 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
 )
-

@@ -9,48 +9,119 @@
 </p>
 
 <p align=center>
-<a href="https://pypi.org/project/c99-api/"><img src="https://img.shields.io/pypi/v/c99-api.svg"></a>
-<!-- <a href="https://pypistats.org/packages/c99-api"><img src="https://pepy.tech/badge/c99-api"></a> -->
-<a href="https://discord.gg/rR6xkP6rJu"><img src="https://img.shields.io/badge/Discord-700-blueviolet?logo=discord&amp;logoColor=white&style=round">
+<a href="https://pypi.org/project/c99api/"><img src="https://badgen.net/pypi/v/c99api/"></a>
+<a href="https://github.com/Haste171/c99-api/releases"><img src="https://badgen.net/github/release/Haste171/c99-api">
+<a href="https://gitHub.com/Haste171/c99-api/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
+<a href="https://github.com/Haste171/c99-api/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Haste171/c99-api">
+<a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
+
+</a>
 
 # Installation
 
 ```
-pip install c99-api
+pip install c99api
+```
+
+**Initiator**
+```python
+# Import the package
+from c99api import EndpointClient
+
+api = EndpointClient
+
+# Define your API key
+api.key = 'your_key'
 ```
 
 # Usage
 
-```python
-# Import the package
-import c99-api
-
-# Define your API key
-c99_api.key = 'your_key'
-```
-
 ```python 
 # Access list of different methods available
-response = c99.list_methods()
+response = api.list_methods()
 print(response)
 ```
+```python
+[
+    'phonelookup',
+    'emailvalidator',
+    'disposablemailchecker',
+    'portscanner',
+    'portscanner_port',
+    'ping',
+    'gethostname',
+    'dnschecker',
+    'dnsresolver',
+    'ipvalidator',
+    'torchecker',
+    'iplogger',
+    'proxydetector',
+    'subdomainfinder',
+    'firewalldetector',
+    'ip2domains',
+    'alexarank',
+    'whois',
+    'createscreenshot',
+    'geoip',
+    'upordown',
+    'reputationchecker',
+    'getheaders',
+    'linkbackup',
+    'urlshortener',
+    'bitcoinbalance',
+    'ethereumbalance',
+    'currency',
+    'currencyrates',
+    'randomstringpicker',
+    'dictionary',
+    'definepicture',
+    'synonym',
+    'translate',
+    'randomperson',
+    'youtubedetails',
+    'youtubemp3',
+    'weather',
+    'qrgenerator',
+    'textparser',
+    'passwordgenerator',
+    'randomnumber',
+    'licensekeygenerator',
+    'eitheror',
+    'gif'
+]
+```
+
+## Use Cases
+```python
+# With JSON
+response = api.emailvalidator(email='example@example.com', json=True)
+print(response)
+```
+```json
+{'success': True, 'exists': False, 'error': "E-mail doesn't exist."}
+```
+
 
 ```python
-# Example Methods
-
-# Phone lookup
-response = c99.phonelookup(number='1234567890', json=True)
-print(response)
-
-# Email validation
-response = c99.emailvalidator(email='example@example.com', json=True)
-print(response)
-
-# Port scanner
-response = c99.portscanner(host='example.com', json=True)
+# Without JSON
+response = api.emailvalidator(email='example@example.com', json=False)
 print(response)
 ```
+```md
+Email doesn't exist
+```
 
-## Other Docs
+# Other
+
+## To-Do
+Add dynamic parser for JSON responses
+
+
+## Docs
 
 [API Overview](https://api.c99.nl/dashboard/api_overview)
+
+## Warning
+
+**To use the c99.nl API you need to [purchase](https://api.c99.nl/dashboard/shop) an API key**
+
