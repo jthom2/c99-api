@@ -1,11 +1,12 @@
 # handler.py
 
 import requests
-from methods import register_methods
+from .methods import register_methods
 
 @register_methods
 
-class c99_api:
+class APIHandler:
+
     key = None
     base_url = 'https://api.c99.nl'
 
@@ -127,3 +128,4 @@ class c99_api:
         ]
 
         return methods_list
+        

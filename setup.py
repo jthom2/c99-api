@@ -1,12 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='c99-api',
-    version='1.0.0',
+    name='c99api',
+    version='0.1.1',
     description='A Python wrapper and handler for the c99.nl API',
-    author='David Peterson',
-    author_email='dapanon@proton.me',
-    url='https://github.com/haste171/c99-api',
     packages=find_packages(),
     install_requires=['requests'],
     classifiers=[

@@ -1,5 +1,12 @@
 # methods.py
 
+def register_methods(cls):
+    method_names = [func.__name__ for func in globals().values() if callable(func) and func.__name__ != 'register_methods']
+    for method_name in method_names:
+        method_func = globals()[method_name]
+        setattr(cls, method_name, classmethod(method_func))
+    return cls
+
 """
 Communication Tools
 """
@@ -158,11 +165,3 @@ def eitheror(cls, json=True):
 def gif(cls, keyword, json=True):
     return cls.perform_request(endpoint_name='gif', keyword=keyword, json=json)
 
-
-# Register methods
-def register_methods(cls):
-    method_names = [func.__name__ for func in globals().values() if callable(func) and func.__name__ != 'register_methods']
-    for method_name in method_names:
-        method_func = globals()[method_name]
-        setattr(cls, method_name, classmethod(method_func))
-    return cls
