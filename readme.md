@@ -99,7 +99,7 @@ print(response)
 ```
 ```json
 {
-    "success": True, 
+    "success": True,
     "exists": False,
     "error": "E-mail doesn't exist."
 }
