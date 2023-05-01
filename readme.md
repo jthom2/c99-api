@@ -11,7 +11,7 @@
 <p align=center>
 <a href="https://pypi.org/project/c99api/"><img src="https://badgen.net/pypi/v/c99api/"></a>
 <a href="https://github.com/Haste171/c99-api/releases"><img src="https://badgen.net/github/release/Haste171/c99-api">
-<a href="https://gitHub.com/Haste171/c99-api/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
+<a href="https://gitHub.com/Haste171/c99-api/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-no-red.svg">
 <a href="https://github.com/Haste171/c99-api/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Haste171/c99-api">
 <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
 
