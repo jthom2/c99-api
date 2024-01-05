@@ -15,7 +15,6 @@ class EndpointClient:
         if not cls.key:
             raise ValueError("API key not set. Use c99_api.key = 'your_api_key'")
         
-        # Add &json to the URLs only if json parameter is set to True
         json_query = '&json' if json else ''
         
         endpoint_list = {
